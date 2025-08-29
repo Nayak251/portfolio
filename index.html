@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santosh Nayak - Proffessional Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      margin: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto;
+      background-color: #fff;
+      padding: 32px 24px;
+      border-radius: 8px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.09);
+    }
+    header {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      color: #005fa3;
+      font-size: 2.4rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-weight: 600;
+      color: #004d99;
+      font-size: 0.98rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 3px;
+      text-decoration: none;
+      border-bottom: 2.5px solid transparent;
+      transition: border .2s, color .2s;
+    }
+    nav a.active, nav a:hover {
+      border-bottom: 2.5px solid #0077cc;
+      color: #0077cc;
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    section h2 {
+      color: #004080;
+      border-left: 5px solid #0077cc;
+      padding-left: 12px;
+      font-size: 1.45rem;
+      margin-bottom: 16px;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid #d0d0d0;
+      padding: 9px 11px;
+      text-align: left;
+    }
+    th {
+      background-color: #0077cc;
+      color: white;
+    }
+    .btn-download, .btn-view {
+      display: inline-block;
+      padding: 6px 19px;
+      font-size: 1em;
+      border-radius: 23px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .btn-download {
+      background-color: #0077cc;
+      color: #fff;
+      margin-top: 8px;
+    }
+    .btn-download:hover { background-color: #005fa3; }
+    .btn-view {
+      background-color: #28a745;
+      color: white;
+      margin-left: 10px;
+      font-size: 0.97em;
+    }
+    .btn-view:hover { background-color: #1e7e34; }
+    .contact-info span { display: inline-block; margin-right: 17px; }
+    @media (max-width: 650px) {
+      .container { padding: 12px 3px; }
+      section h2 { font-size: 1.07rem; }
+      nav { gap: 18px; }
+      header { flex-direction: column; gap: 8px;}
+    }
+    footer {
+     width: 100%;
+     text-align: center;
+     position: relative;
+     margin-top: 50px;
+     padding: 18px 0 10px 0;
+     color: #777;
+     font-size: 1rem;
+     background: transparent;
+     }
+     footer hr {
+     border: none;
+     border-top: 1.5px solid #cccccc;
+     margin-bottom: 16px;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     }
+  </style>
+</head>
+<body>
+<div class="container" id="home">
+  <header>
+    
+    <img src="https://avatars.githubusercontent.com/u/122735124?v=4" alt="Santosh Nayak" width="105" style="border-radius:50%;border:2px solid #0077cc;" />
+    <h1>Santosh Nayak</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#internships">Internships</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate computer science graduate with strong skills in cybersecurity, AI, data validation, and software development.
+      I enjoy solving complex problems, leading teams, and continuously learning new technologies to contribute effectively in the tech industry.
+    </p>
+    <a href="Santosh_Nayak_Resume.pdf" download class="btn-download">Download Resume</a>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <tr>
+        <th>Qualification</th>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Percentage/CGPA</th>
+      </tr>
+      <tr>
+        <td>SSLC</td>
+        <td>B K Gupta High School, Ranebennuru</td>
+        <td>2019</td>
+        <td>91.84%</td>
+      </tr>
+      <tr>
+        <td>PUC</td>
+        <td>Devika PU Science College, Ranebennuru</td>
+        <td>2021</td>
+        <td>96%</td>
+      </tr>
+      <tr>
+        <td>B.E. (CSE)</td>
+        <td>AGM College of Engineering & Technology, Hubballi</td>
+        <td>2025</td>
+        <td>7.99 CGPA</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="internships">
+    <h2>Internship Experience</h2>
+    <ul>
+      <p><li>Cyber Security Internship at GIT TECH SOLUTIONS: Hands-on vulnerability assessments and security fundamentals.
+      <a href="certificates/Git Internship Certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li></p>
+      <p><li>AI Data Quality Analyst Internship at ROOMAN TECHNOLOGIES: Worked on AI-driven data validation and quality improvement.
+      <a href="certificates/Rooman Internship Certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li></p>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <p><li><strong>Exploit Client Side Vulnerabilities and Establish a VNC Session:</strong> Investigated client-side vulnerabilities for remote access.</li></p>
+      <p><li><strong>Virtual 3D Room Scene Using OpenCV:</strong> Developed 3D room visualization with OpenCV computer vision techniques.</li></p>
+      <p><li><strong>Criminal Database Management System:</strong> Built a management system using PyCharm and MySQL for law enforcement.</li></p>
+      <p><li><strong>AI-Powered Data Validation and Standardization:</strong> Created AI models to clean and validate datasets for business use.</li></p>
+      <p><li><strong>Sustainable Agriculture Monitoring System:</strong> IoT-based solution for smart water and pesticide usage monitoring.</li></p>
+      <p><li><strong>Simple Blockchain Simulation:</strong> Python blockchain simulation. 
+        <a href="https://github.com/Nayak251/simple-blockchain-simulation" target="_blank" style="color:#0077cc;font-size:0.97em;">GitHub Repo</a>
+      </li></p>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Technical:</strong> Python, HTML, CSS, SQL, C (Basic), PowerBi, MS Office</p>
+    <p><strong>Personal:</strong> Leadership, Communication, Problem Solving, Risk Taking</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications & Courses</h2>
+    <ul>
+      <li>
+        Web Development Course (12 months) – STP Computer Education
+        <a href="certificates/web development diploma.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Data Visualization – TATA
+        <a href="certificates/Data visualization_completion_certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Development and Advanced Engineering Job Simulation – Accenture
+        <a href="certificates/Development and advanced engineering job simulation_completion_certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        AI-Driven Data Analytics – WsCube Tech
+        <a href="certificates/Ai-Driven data analytics.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Google Analytics Quick Start – Linkedin Learning
+        <a href="certificates/Google analytics LinkedIn Learning Certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        AI-Powered Marketing Data Analytics for Beginners – WsCube Tech
+        <a href="certificates/AI-Powered Marketing Data Analytics for Beginners.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Power BI: Dashboard for Beginners – Linkedin Learning
+        <a href="certificates/PowerBi for beginners LinkedIn Learning Certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Dashboard Design Secrets with Power BI – WsCube Tech
+        <a href="certificates/Dashboard Design Secrets with Power BI.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Power BI Workshop – Jobaaj Learnings
+        <a href="certificates/Jobaaj Workshop.jpeg" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Tableau Fundamentals – WsCube Tech
+        <a href="certificates/Tablue-certificate-1735619702.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Java Script Fundamentals – Udemy
+        <a href="certificates/udemy java script fundamentals.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        Essentials of MS Excel – UniAthena
+        <a href="certificates/Uniathena.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      <li>
+        PowerBI Workshop – Office Master
+        <a href="certificates/OfficeMaster PowerBI Certificate.pdf" target="_blank" class="btn-view">View</a>
+      </li>
+      
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Personal</h2>
+    <p><strong>Email:</strong> <a href="mailto:nayaksantu854@gmail.com">nayaksantu854@gmail.com</a></p>
+    <p><strong>Phone: </strong>+91 8867620863</p>
+    <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/santosh-nayak-905646297" target="_blank">linkedin.com/in/santosh-nayak-905646297</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Nayak251" target="_blank">github.com/Nayak251</a></p>
+    <p><strong>Languages: </strong>Kannada, English, Hindi</p>
+    <p><strong>Hobbies:</strong> Playing E-Sports, Chess</p>
+    <p><strong>Date of Birth:</strong> 25 April 2003</p>
+    <p><strong>Address:</strong> Venkatapur, Ranebennuru (Tq), Haveri (Dist), 581115</p>
+  </section>
+
+  <footer>
+    <hr>
+    <p>&copy; 2025 Santosh Nayak</p>
+  </footer>
+</div>
+
+<script>
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if(href[0] === "#") {
+        e.preventDefault();
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        this.classList.add('active');
+        document.querySelector(href).scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  });
+</script>
+</body>
+
+</html>
+
