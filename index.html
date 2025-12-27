@@ -154,7 +154,9 @@
       I am a passionate computer science graduate with strong skills in cybersecurity, AI, data validation, and software development.
       I enjoy solving complex problems, leading teams, and continuously learning new technologies to contribute effectively in the tech industry.
     </p>
-    <a href="Santosh_Nayak_Resume.pdf" download class="btn-download">Download Resume</a>
+    <button onclick="previewAndDownload('Santosh_Nayak_Resume.pdf')" class="btn-download">
+    👁️ View & Download Resume
+    </button>
   </section>
 
   <section id="education">
@@ -295,7 +297,18 @@
 </div>
 
 <script>
-  // Smooth scrolling for navigation links
+  function previewAndDownload(pdfUrl) {
+  const previewWindow = window.open(pdfUrl, '_blank');
+  setTimeout(() => {
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = pdfUrl; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }, 800);  
+      }
+  
   document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -311,6 +324,7 @@
 </body>
 
 </html>
+
 
 
 
